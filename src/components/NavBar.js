@@ -1,18 +1,21 @@
-import { Container, Nav, Navbar, Image } from "react-bootstrap";
-import CartWidget from "./CartWidget";
+import { Container, Nav, Navbar } from "react-bootstrap";
+import { Link } from 'react-router-dom';
+import CartWidget from "./CartWidget/CartWidget";
 
 const NavBar = () => {
     return (
         <header>
             <Navbar bg="dark" variant="dark">
                 <Container className="d-flex m-2 align-items-center">
-                    <Navbar.Brand className="p-1" href="#home">Tech-Store</Navbar.Brand>
+                    <Navbar.Brand className="p-1" as={Link} to='/'>
+                        Tech-Store
+                    </Navbar.Brand>
                     <Nav className="me-auto">
-                        <Nav.Link href="#home">Home</Nav.Link>
-                        <Nav.Link href="#features">Perifericos</Nav.Link>
-                        <Nav.Link href="#pricing">Hardware</Nav.Link>
+                        <Nav.Link as={Link} to='/'>Home</Nav.Link>
+                        <Nav.Link as={Link} to='/category/perifericos'>Perifericos</Nav.Link>
+                        <Nav.Link as={Link} to='/category/hardware'>Hardware</Nav.Link>
                     </Nav>
-                    <CartWidget  />
+                    <CartWidget />
                 </Container>
             </Navbar>
         </header>
