@@ -20,7 +20,7 @@ const OrderModal = ({ showModal, onClose, onBuy, orderId}) => {
         </Form.Group>
         <Form.Group className="mb-3" controlId="formBasicEmail">
           <Form.Label>Telefono</Form.Label>
-          <Form.Control type="text" placeholder="Ingrese telefono" />
+          <Form.Control type="number" placeholder="Ingrese telefono" />
         </Form.Group>
       </Modal.Body>
       <Modal.Footer>

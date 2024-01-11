@@ -71,7 +71,7 @@ const Cart = () => {
       )}
       {!showTable && (
         <>
-          <h3>Carrito de compra vacio</h3>
+          <h3 className="emptyCart">¡Carrito de compra vacio!</h3>
           <Link to='/'>
             <Button variant="success">Ver productos</Button>
           </Link>

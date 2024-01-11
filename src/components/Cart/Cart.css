@@ -1,4 +1,10 @@
 path {
-    color: grey;
-    cursor: pointer;
-  }
+  color: grey;
+  cursor: pointer;
+}
+
+.emptyCart {
+  font-size: 1rem;
+  color: red;
+  margin: 1rem 0;
+}

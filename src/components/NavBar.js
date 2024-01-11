@@ -5,7 +5,7 @@ import CartWidget from "./CartWidget/CartWidget";
 const NavBar = () => {
     return (
         <header>
-            <Navbar bg="dark" variant="dark">
+            <Navbar bg="dark" variant="dark" className="d-flex justify-content-center">
                 <Container className="d-flex m-2 align-items-center">
                     <Navbar.Brand className="p-1" as={Link} to='/'>
                         Tech-Store

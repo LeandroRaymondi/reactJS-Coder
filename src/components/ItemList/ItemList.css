@@ -3,4 +3,10 @@
     flex-wrap: wrap;
     justify-content: space-around;
     gap: 3em;
+    margin: 3rem 0;
+}
+
+.cardImage {
+    height: 286px;
+    width: 286px;
 }
